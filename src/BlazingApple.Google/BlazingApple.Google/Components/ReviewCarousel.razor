@@ -1,0 +1,9 @@
+﻿@using BlazingApple.Components.Lists
+@using GoogleApi.Entities.Places.Details.Response;
+@if(Reviews is not null) {
+	<Carousel Items="Reviews" Context="review" TItem="Review" HideNavButtons="true">
+		<ChildContent>
+			<ReviewCard Review="review"></ReviewCard>
+		</ChildContent>
+	</Carousel>
+}

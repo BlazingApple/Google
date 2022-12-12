@@ -1,0 +1,18 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/src/BlazingApple.Google/.vs/BlazingApple.Google
+/src/BlazingApple.Google/BlazingApple.Google/bin
+/examples/BlazingAppleConsumer.Google/.vs/*
+/examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Client/obj
+/examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Server/obj
+/examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Shared/obj
+/examples/BlazingAppleConsumer.GoogleServerless/BlazingAppleConsumer.GoogleServerless/bin/*
+/examples/BlazingAppleConsumer.GoogleServerless/BlazingAppleConsumer.GoogleServerless/obj/*
+/examples/BlazingAppleConsumer.GoogleServerless/.vs/*
+/src/BlazingApple.Google/BlazingApple.Google/obj
+examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Client/bin/*
+examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Client/wwwroot/lib/*
+examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Shared/bin/*
+examples/BlazingAppleConsumer.Google/BlazingAppleConsumer.Google/Server/bin/*
