@@ -11,7 +11,7 @@
 	},
 	"profiles":
 	{
-		"BlazingAppleConsumer.GoogleServerless":
+		"BlazingAppleConsumer.Google":
 		{
 			"commandName": "Project",
 			"dotnetRunMessages": true,

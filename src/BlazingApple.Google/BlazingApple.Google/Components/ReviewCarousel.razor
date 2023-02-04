@@ -1,7 +1,8 @@
-﻿@using BlazingApple.Components.Lists
+﻿@using BlazingApple.Components.Lists;
+@using BlazingApple.Google.Shared;
 @using GoogleApi.Entities.Places.Details.Response;
 @if(Reviews is not null) {
-	<Carousel Items="Reviews" Context="review" TItem="Review" HideNavButtons="true">
+	<Carousel Items="Reviews" Context="review" TItem="GoogleReview" HideNavButtons="@(!ShowPrevNextButtons)">
 		<ChildContent>
 			<ReviewCard Review="review"></ReviewCard>
 		</ChildContent>

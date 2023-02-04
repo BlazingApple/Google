@@ -1,59 +1,41 @@
-﻿<Project Sdk="Microsoft.NET.Sdk.Razor">
+<Project Sdk="Microsoft.NET.Sdk">
 
 	<PropertyGroup>
 		<TargetFramework>net7.0</TargetFramework>
-		<Nullable>enable</Nullable>
 		<ImplicitUsings>enable</ImplicitUsings>
+		<Nullable>enable</Nullable>
 		<Description>BlazingApple is a collection of business objects and corresponding components to speed application development. BlazingApple.Components provides a set of core components to easily create beautiful applications</Description>
 		<Authors>Taylor White</Authors>
-		<Nullable>enable</Nullable>
-		<ImplicitUsings>enable</ImplicitUsings>
 		<PackageIcon>BlazingApple.png</PackageIcon>
 		<PackageReadmeFile>README.md</PackageReadmeFile>
 		<RepositoryUrl>https://github.com/BlazingApple/Google</RepositoryUrl>
 		<Copyright>2022 Blazing Apple</Copyright>
 		<PackageProjectUrl>https://github.com/BlazingApple/Google</PackageProjectUrl>
-		<AssemblyVersion>0.3.10</AssemblyVersion>
-		<PackageVersion>0.3.10</PackageVersion>
-		<FileVersion>0.3.10</FileVersion>
-		<Version>0.3.10</Version>
+		<AssemblyVersion>0.1.5</AssemblyVersion>
+		<PackageVersion>0.1.5</PackageVersion>
+		<FileVersion>0.1.5</FileVersion>
+		<Version>0.1.5</Version>
 		<IncludeSymbols>true</IncludeSymbols>
 		<SymbolPackageFormat>snupkg</SymbolPackageFormat>
 		<GenerateDocumentationFile>true</GenerateDocumentationFile>
 		<GeneratePackageOnBuild>True</GeneratePackageOnBuild>
-		<Title>BlazingApple.Google</Title>
+		<Title>BlazingApple.Google.Services</Title>
 	</PropertyGroup>
 
 	<ItemGroup>
-	  <Content Remove="compilerconfig.json" />
-	</ItemGroup>
-
-	<ItemGroup>
-	  <_ContentIncludedByDefault Remove="compilerconfig.json" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<None Include="..\..\..\..\BlazingApple.png">
+		<None Include="..\..\..\BlazingApple.png">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Include="..\..\..\README.md">
+		<None Include="..\..\README.md">
 			<Pack>True</Pack>
 			<PackagePath>\</PackagePath>
 		</None>
-		<None Include="compilerconfig.json" />
 	</ItemGroup>
 
 	<ItemGroup>
-		<SupportedPlatform Include="browser" />
-	</ItemGroup>
-
-	<ItemGroup>
-		<PackageReference Include="BlazingApple.Components" Version="2.2.2" />
-		<PackageReference Include="BlazingApple.Google.Services" Version="0.1.4" />
 		<PackageReference Include="BlazingApple.Google.Shared" Version="0.1.2" />
 		<PackageReference Include="GoogleApi" Version="4.5.2" />
-		<PackageReference Include="Microsoft.AspNetCore.Components.Web" Version="7.0.2" />
+		<PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="7.0.0" />
 	</ItemGroup>
-
 </Project>

@@ -1,0 +1,21 @@
+﻿.reviewCard {
+  border-radius: 2px;
+  background-color: #efefef;
+  flex-direction: column;
+  padding: 15px;
+}
+.reviewCard .reviewStar {
+  color: palegoldenrod;
+}
+.reviewCard .reviewText {
+  overflow-x: hidden;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.reviewPicture {
+  height: 48px;
+  width: 48px;
+  margin-right: 0.5rem;
+  border-radius: 100%;
+}

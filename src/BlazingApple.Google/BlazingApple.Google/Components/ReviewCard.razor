@@ -1,29 +1,29 @@
 ﻿@if (Review is not null)
 {
 	<div class="d-flex flex-column">
-		<div class="d-flex" style="border-radius:2px; background-color:#efefef !important; padding: 15px;">
+		<div class="d-flex reviewCard">
 			<div>
 				@for (int i = 1; i <= Review.Rating; i++)
 				{
-					<span style="color: palegoldenrod;">⭐</span>
+					<span class="reviewStar">⭐</span>
 				}
 			</div>
 			<div>
-				<div style="overflow-x: hidden; overflow-y:auto; padding-right: 10px;">
+				<div class="reviewText">
 					@Review.Text
 				</div>
 			</div>
 		</div>
-		<div class="d-flex align-items-center">
+		<div class="d-flex align-items-center mt-2">
 			<div>
-				<img src="@Review.ProfilePhotoUrl" />
+				<img style="@_imgStyle" alt="@($"Profile picture for {Review.AuthorName}")" @onerror="OnImageLoadFail" class="reviewPicture" src="@Review.ProfilePhotoUrl" />
 			</div>
 			<div class="d-flex flex-column">
 				<div>
 					<strong>@Review.AuthorName</strong>
 				</div>
-				<small class="text-muted">
-					@Review.DateTime.ToShortDateString()
+				<small class="reviewDateString text-muted">
+					@Review.RelativeTime
 				</small>
 			</div>
 		</div>
