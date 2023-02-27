@@ -4,11 +4,13 @@
     <TargetFramework>net7.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>2d3cbe5c-258e-4109-a67c-716bd05ffa76</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
 	  <PackageReference Include="BlazingApple.Components" Version="2.2.2" />
 	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly" Version="7.0.2" />
+	  <PackageReference Include="Google.Apis.Calendar.v3" Version="1.59.0.2759" />
 	  <PackageReference Include="Microsoft.Web.LibraryManager.Build" Version="2.1.175" />
 	  <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.DevServer" Version="7.0.2" PrivateAssets="all" />
   </ItemGroup>
@@ -16,5 +18,9 @@
   <ItemGroup>
     <ProjectReference Include="..\..\..\src\BlazingApple.Google.Services\BlazingApple.Google.Services.csproj" />
     <ProjectReference Include="..\..\..\src\BlazingApple.Google\BlazingApple.Google\BlazingApple.Google.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Components\" />
   </ItemGroup>
 </Project>
